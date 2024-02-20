@@ -1,710 +1,703 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>index</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>🇯🇵 東京靜岡旅行 20240313-0319</title><style>
+	/* cspell:disable-file */
+	/* webkit printing magic: print all background colors */
+	html {
+		-webkit-print-color-adjust: exact;
 	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
+	* {
+		box-sizing: border-box;
+		-webkit-print-color-adjust: exact;
 	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	padding-inline-start: 0;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.page-description {
-    margin-bottom: 2em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-	empty-cells: show;
-}
-.simple-table td {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table th {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table-header-color {
-	background: rgb(247, 246, 243);
-	color: black;
-}
-.simple-table-header {
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(55, 53, 47, 1);
-}
-.highlight-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.highlight-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.highlight-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.highlight-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.highlight-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.highlight-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.highlight-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.highlight-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.highlight-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.highlight-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.highlight-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.highlight-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.highlight-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.highlight-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.highlight-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.highlight-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.block-color-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.block-color-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.block-color-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.block-color-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.block-color-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.block-color-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.block-color-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.block-color-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.block-color-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.block-color-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.block-color-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.block-color-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
-.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
-.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
-.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
-.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
-.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
-.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
-.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
-.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
-.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
-.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
-.select-value-color-pageGlass { background-color: undefined; }
-.select-value-color-washGlass { background-color: undefined; }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
 	
-</style></head><body><article id="appendix" class="page sans"><header><h1 class="page-title">🇯🇵 東京熱海靜岡旅行 20240313-0319</h1><p class="page-description"></p></header><div class="page-body"><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">行前注意事項：</summary><div class="indented"><ul id="63f0bec6-3537-4124-9fd7-773c7996c3fd" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">攜帶輕羽絨衣或是保暖衣物，旅行期間溫度大約在5-15度之間</span><div class="indented"></div></li></ul><ul id="dc846e2e-b892-453f-9442-4c195ac51dd8" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">不需要攜帶泳衣，日本溫泉只能裸湯，但是可以圍著浴巾泡湯</span><div class="indented"></div></li></ul><ul id="4fd52d9e-edc5-45a4-9b3a-200221426b2f" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">中華電信可以開通日本漫遊，有 1 GB $149 / 7天 或是 2 GB $249 / 7天 方案，會上傳照片或是看影片的話建議選2GB</span><div class="indented"></div></li></ul><ul id="51c986e3-e235-4e82-8381-12d63c52b204" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">每天大約有2-3小時可以在車上休息回血，可以放心睡覺</span><div class="indented"></div></li></ul><ul id="c64e75fc-144e-4310-af8e-0426ea49e39d" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">TeamLab參觀需要把鞋子跟包包寄放在置物櫃，部分作品需要走進小腿深的水池中</span><div class="indented"></div></li></ul><ul id="e36764a1-c6c4-4774-a2ec-e485cba6a170" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Suica卡（台灣暱稱西瓜卡）功能像是台灣的悠遊卡，可以支付地鐵費用以及小額購物，可以開啟iPhone功能把Suica卡加入手機裡的錢包，在東京搭地鐵時就可以不用另外買票。第一次儲值可以先加日幣1000就好。加入的詳細步驟可以看這裡 → <a href="https://support.apple.com/zh-tw/HT207155">如何在 iPhone 或 Apple Watch 上加入新的 Suica、PASMO 或 ICOCA 卡</a></span><div class="indented"></div></li></ul><p id="4f5b5dda-fdde-42af-88e3-3576abf3f6de" class="">
-</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第一天] 3/13 星期三：東京 </summary><div class="indented"><ul id="70501d23-f7e8-4290-88fb-4db83f291c00" class="bulleted-list"><li style="list-style-type:disc">沈爸沈媽集合飯店放東西</li></ul><ul id="00dfd494-2e8c-47a5-b024-2d2cf9d8a161" class="bulleted-list"><li style="list-style-type:disc">12 pm 羽田機場鄧爸鄧媽到，飯店放東西</li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[午餐] 2pm 銀座 根室花丸 迴轉壽司</summary><div class="indented"><ul id="2b18ee5b-19d1-4334-b178-1f9ae7d65820" class="bulleted-list"><li style="list-style-type:disc">搭電車前往台場 約20分鐘</li></ul><ul id="8a73f4e2-2210-42bc-abc1-e411f0a47406" class="bulleted-list"><li style="list-style-type:disc">16:00-16:30 入場TeamLab</li></ul><ul id="054e6f6f-2b48-4e56-a336-06092f6283a6" class="bulleted-list"><li style="list-style-type:disc">搭電車回銀座 約20分鐘</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[晚餐] 7:30 pm 銀座 玄品河豚</summary><div class="indented"><ul id="0291140e-ec9f-4278-bbd1-94c504134e3d" class="bulleted-list"><li style="list-style-type:disc">散步半小時回飯店</li></ul><ul id="1fc6f64e-09d8-4a7b-bda8-a0909f93c87a" class="bulleted-list"><li style="list-style-type:disc">晚上住<a href="https://www.hilton.com/en/hotels/tyocici-conrad-tokyo/">Conrad Tokyo</a></li></ul></div></details><div id="61db1f25-9ede-4cf8-941e-5603d3bc3b29" class="column-list"><div id="e315f9b3-e2ed-4efe-a74b-b69a43c98c81" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="94e6255c-6f7a-4a38-9860-6c98b22302de"><div style="font-size:1.5em"><span class="icon">🍣</span></div><div style="width:100%"><strong>根室花丸迴轉壽司</strong><p id="1500a7b4-dbf3-471a-9980-c06b937d343f" class="">北海道札幌來的人氣食材新鮮迴轉壽司</p><figure id="e422a933-497a-45f9-9ade-bf0a1f93af7c" class="image"><a href="appendix/Untitled.png"><img style="width:750px" src="appendix/Untitled.png"/></a></figure></div></figure><p id="503df3a2-b1ec-4530-9f1d-2acc02ad1731" class="">
-</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b1221a6e-1160-45ef-ae54-49e6815e17cb"><div style="font-size:1.5em"><span class="icon">🐡</span></div><div style="width:100%"><strong>玄品河豚</strong><br/>日式河豚料理，套餐有涼拌河豚、生魚片、炸河豚、河豚火鍋<br/><br/><figure id="4a41aa31-d636-4a9d-8e34-9898fefc8a13" class="image"><a href="appendix/Untitled%201.png"><img style="width:276px" src="appendix/Untitled%201.png"/></a></figure></div></figure></div><div id="a2513d3d-1db1-4f15-b7c6-1b69344139df" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="98f66ba6-4d92-417c-8686-41d673e0e15d"><div style="font-size:1.5em"><span class="icon">⭐</span></div><div style="width:100%"><strong>TeamLab Planet</strong><br/>用科技打造人跟自然的互動的藝術展覽<br/><p id="43abb9a3-853e-46f3-b4a2-a657618db1df" class="">(TeamLab參觀需要把鞋子跟包包寄放在置物櫃，部分作品需要走進小腿深的水池中)</p><figure id="ae60e559-4a85-41fa-abd0-59ef45b582e6" class="image"><a href="appendix/Untitled%202.png"><img style="width:275px" src="appendix/Untitled%202.png"/></a></figure><figure id="5d6dc799-c5a0-43fd-b055-9ad431f929c3" class="image"><a href="appendix/Untitled%203.png"><img style="width:225px" src="appendix/Untitled%203.png"/></a></figure></div></figure><p id="d48e0dc6-1955-4152-bbb4-4d1241306019" class="">
-</p></div></div></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第二天] 3/14 星期四：鎌倉、江之島</summary><div class="indented"><ul id="4c01af99-0af9-4add-9ae0-f753b3600ce9" class="bulleted-list"><li style="list-style-type:disc">飯店吃早餐</li></ul><ul id="4bc0fc87-dbc3-4aaa-b407-020f3615aff4" class="bulleted-list"><li style="list-style-type:disc">車程45分鐘前往鎌倉</li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[午餐] 鎌倉 小町通り Caraway 咖哩或附近店家</summary><div class="indented"><blockquote id="98ea2216-13e1-4ce2-9865-595c4216c2aa" class="">是枝裕和的電影《海街日記》就是在鎌倉取景</blockquote><ul id="62c287cb-1b6d-4b51-8121-e9120a984ce3" class="bulleted-list"><li style="list-style-type:disc">車程15分鐘抵達鎌倉高校前站</li></ul><ul id="8bbde0b1-5765-4ef2-bc93-451a2303d05f" class="bulleted-list"><li style="list-style-type:disc">車程20分鐘抵達江之島</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[晚餐] 江之島</summary><div class="indented"><ul id="9b9719ba-7425-437a-bfe5-9d1af7604b15" class="bulleted-list"><li style="list-style-type:disc">車程20分鐘抵達鐮倉王子大飯店</li></ul><ul id="081dbc62-1b99-46b3-aa79-4be52391ec87" class="bulleted-list"><li style="list-style-type:disc">住<a href="https://www.princehotels.com/kamakura/zh-hant/">鐮倉王子大飯店</a></li></ul><div id="97152808-9cac-4712-b403-5b7e5b6cc500" class="column-list"><div id="ebb7adea-ecfe-479d-83b8-0c4f9a9b041f" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="243a7c41-452e-4745-a9f4-dda86077dd7a"><div style="font-size:1.5em"><span class="icon">🍡</span></div><div style="width:100%">鎌倉小町通り名物：<br/><br/><strong><a href="https://www.arbrenoir.com/">Arbre noir 芝麻抹茶口味鎌倉燒</a></strong><figure id="437e235f-8bb4-471d-ad2f-e2f6cc122c36" class="image"><a href="appendix/Untitled%204.png"><img style="width:240px" src="appendix/Untitled%204.png"/></a></figure><p id="e55f6022-6e26-4595-9064-a92ad3fc8991" class="">
-</p><p id="0a34554a-759d-47e5-9d04-4f28e61b77ec" class=""><a href="https://www.italiantomato.co.jp/brand/yumemiya/">夢見屋 日式糯米團子</a></p><figure id="e162e387-b6a4-47b5-9d1a-f876289a9f16" class="image"><a href="appendix/Untitled%205.png"><img style="width:240px" src="appendix/Untitled%205.png"/></a></figure></div></figure><p id="f75f3484-7427-48e0-a873-627177235795" class="">
-</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="256ac248-e1b4-4457-881a-cbd24a5cbd67"><div style="font-size:1.5em"><span class="icon">🍘</span></div><div style="width:100%">江之島名物：<br/>＊吻仔魚蓋飯<br/><figure id="7c0338e3-435b-4c9d-96aa-145586d5eefb" class="image"><a href="appendix/Untitled%206.png"><img style="width:640px" src="appendix/Untitled%206.png"/></a></figure><p id="8eb986e9-c27c-458b-a64d-5d9d52f3d075" class=""><br/>＊朝日堂 章魚/龍蝦仙貝<br/></p><figure id="1f5a8a6e-0755-46c7-b4f5-489f673c21ba" class="image"><a href="appendix/Untitled%207.png"><img style="width:860px" src="appendix/Untitled%207.png"/></a></figure></div></figure></div><div id="a510abb2-17cf-4569-9b18-8e64c3310a1c" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b1ed5c42-a574-4f17-9ac7-eb03f6eb341e"><div style="font-size:1.5em"><span class="icon">🚉</span></div><div style="width:100%"><strong>鎌倉高校前站</strong><br/>《灌籃高手》平交道經典場景<br/><figure id="383de641-62a7-40f4-b40d-abcb791ead27" class="image"><a href="appendix/Untitled%208.png"><img style="width:245px" src="appendix/Untitled%208.png"/></a></figure></div></figure><p id="24d48944-08f4-4887-86a5-80a8554a8fb5" class="">
-</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="255537c6-525b-440d-abb8-2593d809b510"><div style="font-size:1.5em"><span class="icon">🌸</span></div><div style="width:100%">賞櫻景點：<br/>長谷寺<br/><figure id="7790e80b-c028-4970-8f46-eac97e5e8da7" class="image"><a href="appendix/Untitled%209.png"><img style="width:720px" src="appendix/Untitled%209.png"/></a></figure><p id="3a52c28e-36c4-486a-bdec-0938a16e1211" class="">鶴岡八幡宮</p><figure id="7abcd3b2-061b-4259-abe5-4c71c31efd71" class="image"><a href="appendix/Untitled%2010.png"><img src="appendix/Untitled%2010.png"/></a></figure><p id="3e34b96d-e950-40cd-b265-1446fd3f5c10" class="">高德院/鎌倉大佛</p><figure id="37f90e86-664f-491c-b105-9b6db69eb0e0" class="image"><a href="appendix/Untitled%2011.png"><img style="width:720px" src="appendix/Untitled%2011.png"/></a></figure></div></figure></div></div><p id="18d5b8de-4e1d-4b2d-a3bd-0e473126fa5f" class="">
-</p></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第三天] 3/15 星期五：熱海、伊東市</summary><div class="indented"><ul id="5ebe4f6f-abe3-491e-8583-220f01b507ac" class="bulleted-list"><li style="list-style-type:disc">[早餐] Cafe Yoridokoro 在鐵道旁吃日式早餐(7-9am，可能需要排隊)或是其他</li></ul><ul id="b5938ae8-cdad-46eb-a609-3836ce4b6946" class="bulleted-list"><li style="list-style-type:disc">車程一小時前往熱海MOA art museum</li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[午餐] 熱海溫泉老街 熱海魚・大食堂</summary><div class="indented"><ul id="4645da09-d05c-4dbb-8918-69214f5b8132" class="bulleted-list"><li style="list-style-type:disc">車程10分鐘前往COEDA HOUSE喝咖啡</li></ul><ul id="54fbd65d-0513-4b47-a197-ca0fed8732c1" class="bulleted-list"><li style="list-style-type:disc">車程30分鐘前往旅館 Laforet Ito Onsen 湯の庭</li></ul><ul id="2ad329d0-6ef5-41ce-ab2d-1c20e3abf9be" class="bulleted-list"><li style="list-style-type:disc">飯店內泡湯</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[晚餐] 伊東市區餐廳（待訂）</summary><div class="indented"><ul id="4de20399-e475-49fa-8fe3-c9e64d3573a9" class="bulleted-list"><li style="list-style-type:disc">住伊東市溫泉旅館 Laforet Ito Onsen 湯の庭</li></ul><div id="4fd5987c-0c7d-4047-8b55-411954319627" class="column-list"><div id="445082ed-5979-4173-b667-031271028342" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="0f1058ab-6fdf-4da4-8834-0d003a7db00c"><div style="font-size:1.5em"><span class="icon">🌺</span></div><div style="width:100%">熱海MOA Museum of Art：<figure id="7f4688b9-54eb-4cfe-b533-498a78a15921" class="image"><a href="appendix/Untitled%2012.png"><img style="width:1360px" src="appendix/Untitled%2012.png"/></a></figure><p id="d3e1d9ff-ffe4-420d-9cb5-5ca2a13e9fce" class=""><br/>晴天時可以看到初島和伊豆大島的海景博物館，使用屋久杉、行者杉、黑灰泥和榻榻米等日本傳統材料打造。<br/></p><figure id="f79e3aff-98ff-46b2-826a-095438c015c7" class="image"><a href="appendix/Untitled%2013.png"><img style="width:1360px" src="appendix/Untitled%2013.png"/></a></figure></div></figure><p id="6c7692f9-e2f2-4639-9386-7c1227bf4948" class="">
-</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="d8ea7ce0-38a3-437a-a08a-281b63abfd0e"><div style="font-size:1.5em"><span class="icon">☕</span></div><div style="width:100%">COEDA HOUSE：<br/>隈研吾所設計的海景咖啡廳<br/><figure id="ce71c033-264b-4e4d-9bc3-5886d816da12" class="image"><a href="appendix/Untitled%2014.png"><img style="width:275px" src="appendix/Untitled%2014.png"/></a></figure><p id="06df4f9a-64bc-4fc2-8ff8-631a3be9731a" class=""><br/>世界最大的盆栽「鳳凰之松」<br/></p><figure id="8eda9eff-0883-4857-b4d5-bcb6ffbb5d1d" class="image"><a href="appendix/Untitled%2015.png"><img style="width:259px" src="appendix/Untitled%2015.png"/></a></figure></div></figure></div><div id="6e756295-079c-4ac1-9de0-f851cb3ea275" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="53602fba-f492-45f4-ae2f-9bf332ed01a7"><div style="font-size:1.5em"><span class="icon">🍮</span></div><div style="width:100%">熱海名物：<br/>＊熱海布丁<br/><figure id="cbf298e9-393d-432e-ace5-fb7ecb04a5b0" class="image"><a href="appendix/Untitled%2016.png"><img style="width:275px" src="appendix/Untitled%2016.png"/></a></figure><p id="73d7fe41-b96e-47f9-bf74-cedcb131c029" class="">
-</p><p id="3935d3df-b505-4b0b-a6cd-9e93b648608d" class="">＊熱海魚 大食堂</p><figure id="ae388ae6-92f6-446b-b409-095d0e236ae1" class="image"><a href="appendix/Untitled%2017.png"><img style="width:1400px" src="appendix/Untitled%2017.png"/></a></figure></div></figure><p id="e56738ae-215a-418a-be55-e9873e9f3663" class="">
-</p></div></div><p id="a640624a-3375-41d8-a27b-8ffb3df27447" class="">
-</p></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第四天] 3/16 星期六：靜岡 🗻</summary><div class="indented"><ul id="950db055-55f4-4f43-be89-30d5993b8c16" class="bulleted-list"><li style="list-style-type:disc">早上在飯店吃早餐</li></ul><ul id="c00b9b9e-3035-4e9a-bdb7-6be37df688d2" class="bulleted-list"><li style="list-style-type:disc">車程1小時30分鐘前往午餐</li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[午餐] 櫻花蝦料理 kurasawaya</summary><div class="indented"><ul id="a6f9585d-e0df-4a20-8309-d23ae736fef0" class="bulleted-list"><li style="list-style-type:disc">車程30分鐘前往日本平</li></ul><ul id="9653de30-9461-42cb-afcd-98b9f9a6aec2" class="bulleted-list"><li style="list-style-type:disc">日本平觀賞富士山<ul id="c1b61e1c-14af-44c9-80d6-236eeb2927c3" class="bulleted-list"><li style="list-style-type:circle">時間許可的話可以在日本平飯店用下午茶</li></ul></li></ul><ul id="9123104b-b8d2-440c-a281-7fa2c0acc815" class="bulleted-list"><li style="list-style-type:disc">車程30分鐘前往靜岡市區</li></ul><ul id="5945f3e2-97e2-45fc-b307-488207ce77ea" class="bulleted-list"><li style="list-style-type:disc">靜岡市區 <ul id="6d443777-c55d-477a-b168-f50c325c45af" class="bulleted-list"><li style="list-style-type:circle">Maruzen Tea Roastery &amp; 丸七製茶 ななや (nanaya) 吃不同濃度的抹茶冰淇淋</li></ul><ul id="c7602550-7b41-44c5-b122-2abc36227882" class="bulleted-list"><li style="list-style-type:circle">青葉黑輪街吃關東煮散步</li></ul></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[晚餐] うなぎ満嬉多（待確認）</summary><div class="indented"><ul id="2110a2b4-627b-4fad-84b9-f0c3abaf2670" class="bulleted-list"><li style="list-style-type:disc">車程30分鐘前往飯店</li></ul><ul id="cc5c48d9-59eb-4494-a4e0-b9a377b21e53" class="bulleted-list"><li style="list-style-type:disc">住靜岡 <a href="https://www.hatagoinn.com/en/hsy/">Hatago Inn</a></li></ul><div id="9e217c58-979f-4066-9c70-af2f56726ff9" class="column-list"><div id="bbe84ea4-fda0-4d4c-a813-a46ad511c540" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b4d92211-bda8-42cb-8b25-ed77f8ca3cda"><div style="font-size:1.5em"><span class="icon">🦐</span></div><div style="width:100%"><strong>Kurasawaya 午餐 櫻花蝦</strong><br/>靜岡線美食「駿河灣的珍珠」櫻花蝦<br/><figure id="a7001439-8b2e-4cfa-ab2a-9bf3bb5ad858" class="image"><a href="appendix/Untitled%2018.png"><img style="width:430px" src="appendix/Untitled%2018.png"/></a></figure></div></figure><p id="f5fc58fb-bc83-47ff-8b54-4f72da8fd358" class="">
-</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="fc4fb1d7-c8fa-47e7-b7f9-83e1eb409b8d"><div style="font-size:1.5em"><span class="icon">🗻</span></div><div style="width:100%"><strong>日本平</strong><br/>隈研吾所設計的觀景台<br/>可眺望駿河灣、清水港、三保松原和富士山<br/><figure id="c7178ff9-6cc9-4ec1-95f4-9f50593bea50" class="image"><a href="appendix/Untitled%2019.png"><img style="width:600px" src="appendix/Untitled%2019.png"/></a></figure></div></figure><p id="ba2e2d1e-46ab-40fc-97dc-26d1d0045759" class="">
-</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="ab5cc2d9-71e7-4599-aa19-6034871aff4d"><div style="font-size:1.5em"><span class="icon">🥢</span></div><div style="width:100%">靜岡市區食物：<br/>三河屋 關東煮<br/><figure id="fc61de0e-5f70-4c65-a3a4-bb725c061a24" class="image"><a href="appendix/Untitled%2020.png"><img style="width:640px" src="appendix/Untitled%2020.png"/></a></figure></div></figure><p id="02c39101-b00c-4225-9755-efa2e4daf08d" class="">
-</p><p id="f5f73dff-8ad4-47ee-a770-a423cadea029" class="">
-</p></div><div id="5a7a2b7b-04ec-41c0-b51f-5d17a29707a8" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="12bb0c90-bb54-479e-9668-7f9a61093d73"><div style="font-size:1.5em"><span class="icon">🍨</span></div><div style="width:100%">靜岡市區抹茶甜點：<br/><br/><strong>Maruzen Tea Roastery</strong><figure id="c677acd9-c0cd-428a-97fd-2da4a76eaaf3" class="image"><a href="appendix/Untitled%2021.png"><img style="width:259px" src="appendix/Untitled%2021.png"/></a></figure><p id="ecac64d0-3a05-4b65-b564-bf3d1095a338" class=""><strong>丸七製茶 ななや</strong></p><figure id="67a86f84-c12d-42b4-9eca-ce9672539981" class="image"><a href="appendix/Untitled%2022.png"><img style="width:225px" src="appendix/Untitled%2022.png"/></a></figure></div></figure><p id="50bde0f6-cf39-4a66-8555-0d57266c4e73" class="">
-</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="39e8d924-87c1-4457-ab00-4285d5ffd7e1"><div style="font-size:1.5em"><span class="icon">🌸</span></div><div style="width:100%">靜岡賞櫻景點：<br/>日本平<br/>美和 桜並木 (安倍川沿岸)<br/>燒津市 栃山川堤富士見桜<br/>靜岡市 駿府城公園<br/></div></figure><p id="04adb93b-8988-4462-b63e-42822556dcd7" class="">
-</p></div></div></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第五天] 3/17 星期日：靜岡 🍵</summary><div class="indented"><ul id="35334ec5-16ef-4ccc-a088-c48777b6f928" class="bulleted-list"><li style="list-style-type:disc">[早餐] 飯店早餐或是附近Komeda’s coffee</li></ul><ul id="9d501ff2-8d72-4bc7-88b3-479effb07ec8" class="bulleted-list"><li style="list-style-type:disc">車程15分鐘前往茶之鄉博物館</li></ul><ul id="f67dc8d0-458b-4fe9-9ad4-28b68c8d87fb" class="bulleted-list"><li style="list-style-type:disc">茶之鄉博物館</li></ul><ul id="c40ceeb0-cbed-4390-b25e-5e8127cdab76" class="bulleted-list"><li style="list-style-type:disc">車程15分鐘前往KADODE OOIGAWA</li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[午餐] KADODE OOIGAWA</summary><div class="indented"><ul id="0767f201-1bab-4537-a5a9-416da03a62de" class="bulleted-list"><li style="list-style-type:disc">車程約一小時前往川根本町地區（靜岡山區）</li></ul><ul id="2152314d-8ded-4b75-a577-076b40fcf5e6" class="bulleted-list"><li style="list-style-type:disc">奥大井<ul id="91cf5c60-4c1f-432d-9715-cce661e658c6" class="bulleted-list"><li style="list-style-type:circle">看蒸汽火車</li></ul><ul id="f603a51c-4d80-43a1-8f68-55c4c364b2f7" class="bulleted-list"><li style="list-style-type:circle">走吊橋</li></ul></li></ul><ul id="46c53bac-1d8b-4be7-86ef-a048d922e052" class="bulleted-list"><li style="list-style-type:disc">參觀茶園 川根本町のお茶農家<ul id="2c0cab6f-b4ca-4969-9b8b-1ec3425e6db9" class="bulleted-list"><li style="list-style-type:circle">茶園導覽、品茶</li></ul></li></ul><ul id="dca628a9-f6fe-45a2-bfbf-d7c8d285564e" class="bulleted-list"><li style="list-style-type:disc">車程約一小時前往晚餐</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[晚餐] <strong>とろろ汁の丁子屋（待確認）</strong></summary><div class="indented"><ul id="f57a3418-1b54-41fc-be6f-dc81fe5ab844" class="bulleted-list"><li style="list-style-type:disc">車程30分鐘前往飯店</li></ul><ul id="5cfded30-627a-4a34-86cc-180f4c151284" class="bulleted-list"><li style="list-style-type:disc">住靜岡 <a href="https://www.hatagoinn.com/en/hsy/">Hatago Inn</a><div id="6e969780-7ecf-4b7f-90f7-7477c3a13b4a" class="column-list"><div id="eb23e3d5-bbde-43a9-97d5-c6a121ddf43d" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="a007c67c-6a8a-422a-9795-44f0f0b2942b"><div style="font-size:1.5em"><span class="icon">🫖</span></div><div style="width:100%"><strong>KADODE OOIGAWA</strong><br/>複合式靜岡茶葉推廣中心<br/><figure id="815ddd11-1d28-4e06-bf5b-5f36fff0cbad" class="image"><a href="appendix/Untitled%2023.png"><img style="width:259px" src="appendix/Untitled%2023.png"/></a></figure><p id="590a7082-c71b-4132-8023-70af274c66bf" class="">
-</p><p id="94bba07e-6a33-4920-a8d4-039f1f763150" class=""><strong>茶之鄉博物館</strong></p><p id="b56641e9-c4c1-4898-b703-72dbc0af0ddb" class="">介紹世界各國茗茶歷史、飲茶茶具以及飲茶習慣，也附設日本傳統庭院及茶室。</p><p id="8eb6e791-4808-4f8e-a9bf-f095179404c0" class="">靜岡縣所生產的綠茶與宇治茶並稱「日本2大茶」，而牧之原台地以及其周邊為日本最大的綠茶產地，佔日本全國種生產量的二分之一。</p><figure id="e6cbc8fc-baf2-4880-8459-ff4c88d79897" class="image"><a href="appendix/Untitled%2024.png"><img style="width:275px" src="appendix/Untitled%2024.png"/></a></figure></div></figure><p id="748862af-beed-4e9a-b8f9-36844198cd05" class="">
-</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="20376952-e36b-45fe-9034-910072593f18"><div style="font-size:1.5em"><span class="icon">🌉</span></div><div style="width:100%"><strong>奥大井湖 </strong><br/><br/>夢之吊橋，位於川根本町的寸又峽，是橫跨在大間大壩湖的高8公尺、長90公尺的吊橋<br/><figure id="f57ebfe8-531f-46ec-bdae-39cc9f78ae2f" class="image"><a href="appendix/Untitled%2025.png"><img style="width:1450px" src="appendix/Untitled%2025.png"/></a></figure><p id="a5bbb55d-4557-4736-b1b9-00655fa2a736" class="">
-</p><p id="1ab31d01-229b-45da-b2bc-a1e8ee20adab" class="">奥大井湖上站，有蒸汽火車鐵軌穿越</p><figure id="f55808ae-fe28-42e1-9a42-4b4d7173c964" class="image"><a href="appendix/Untitled%2026.png"><img style="width:275px" src="appendix/Untitled%2026.png"/></a></figure><p id="af9e3a29-9e6b-4f25-84ed-b2a7413cb4a2" class="">
-</p></div></figure></div><div id="df0d5ad2-45ba-4922-a3a0-446cdb942095" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="e54ef30d-c491-4ba1-8fda-026639546284"><div style="font-size:1.5em"><span class="icon">🍵</span></div><div style="width:100%"><strong>川根本町のお茶農家</strong><br/>（備有中文翻譯）<br/><p id="cb0b9a1c-240a-4514-9508-b36702235c58" class="">2022年榮獲日本第一農林水產大臣獎。<br/>體驗內容：茶園導覽、品茶（含甜點）<br/><br/></p><figure id="045f7525-48ea-45ac-9320-52703c477258" class="image"><a href="appendix/Untitled%2027.png"><img style="width:1227px" src="appendix/Untitled%2027.png"/></a></figure><figure id="f0586d3d-6fa1-412a-862b-7ad959f4bdc5" class="image"><a href="appendix/Untitled%2028.png"><img style="width:1189px" src="appendix/Untitled%2028.png"/></a></figure></div></figure><p id="146577cd-03f1-4def-9a48-e8c181f022ee" class="">
-</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="9153978e-2514-4847-af4b-89800a96132e"><div style="font-size:1.5em"><span class="icon">🍱</span></div><div style="width:100%"><strong>とろろ汁の丁子屋 </strong><br/>日本國家有形文化財<br/><figure id="0a867f67-c5bd-4812-80c4-c45407a598c9" class="image"><a href="appendix/Untitled%2029.png"><img style="width:330px" src="appendix/Untitled%2029.png"/></a></figure><figure id="9437c671-3f58-4cd7-bfdf-470f39dec398" class="image"><a href="appendix/Untitled%2030.png"><img style="width:281px" src="appendix/Untitled%2030.png"/></a></figure><figure id="e2176fb0-00eb-48ae-a96d-23964c3a5bb6" class="image"><a href="appendix/Untitled%2031.png"><img style="width:275px" src="appendix/Untitled%2031.png"/></a></figure><p id="c4a66049-c5de-4685-a779-99b9fddaffc1" class="">山藥泥聽說很好吃</p><figure id="b44fa094-3671-4352-b3a9-321169beadf2" class="image"><a href="appendix/Untitled%2032.png"><img style="width:330px" src="appendix/Untitled%2032.png"/></a></figure></div></figure><p id="42cb37bc-4525-46d1-b7ea-ee44029662a1" class="">
-</p></div></div></li></ul></div></details><p id="46c39ab2-b7a9-4e2d-9990-44342a341bf1" class="">
-</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第六天] 3/18 星期一：東京 🌸</summary><div class="indented"><ul id="616fb5bb-bd31-48bc-ba61-75976b554dd7" class="bulleted-list"><li style="list-style-type:disc">[早餐] 飯店早餐或附近店家</li></ul><ul id="cec53cff-8fe8-4705-be63-191070717b30" class="bulleted-list"><li style="list-style-type:disc">車程3小時前往東京，中間找地方休息看櫻花</li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[午餐] 未定</summary><div class="indented"><ul id="186b81ad-8695-496d-bd14-c54c27e8bb22" class="bulleted-list"><li style="list-style-type:disc">賞櫻行程<ul id="d8aa415a-61f0-4ffa-a348-634bc2fe37f4" class="bulleted-list"><li style="list-style-type:circle">目黑川</li></ul></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[晚餐] 未定</summary><div class="indented"><ul id="81554a29-a181-44de-b21b-91e0c9e9d209" class="bulleted-list"><li style="list-style-type:disc">20:00還車 </li></ul><ul id="1e66b3a8-80e4-4113-ab19-9e965b958551" class="bulleted-list"><li style="list-style-type:disc">前往飯店（待訂）</li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="edadaef5-ddbf-479c-9b04-b3c5a8c451bb"><div style="font-size:1.5em"><span class="icon">🌸</span></div><div style="width:100%">東京賞櫻景點：<br/>＊千鳥淵公園<br/>＊鄰接六本木之丘森大樓和朝日電視台總部的「毛利庭園」<br/>＊上野恩賜公園<br/>＊新宿御苑<br/>＊目黑川<br/><figure id="3a935cb1-49db-40a1-a72f-84b33becbd59" class="image"><a href="appendix/Untitled%2033.png"><img style="width:275px" src="appendix/Untitled%2033.png"/></a></figure></div></figure><p id="493c8849-2aa9-46bd-a471-360ad0ba6545" class="">
-</p><p id="ba510273-d6a0-40af-816b-b7821e11af81" class="">
-</p></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第七天] 3/19 星期二：回家</summary><div class="indented"><ul id="626bd65d-0534-4488-8741-d2dad48d13cb" class="bulleted-list"><li style="list-style-type:disc">起得來的話可以去附近的豐洲市場<ul id="dc1a93e6-da65-4714-8b77-507e49620ee5" class="bulleted-list"><li style="list-style-type:circle">進行鮪魚競標的場所在7街區的「水產批發區」。時間為上午5點半開始，過程大約1個小時左右。（可惜我們沒有參與到見習的抽籤）</li></ul></li></ul><ul id="4cb16980-5ba9-4f95-a823-28d8af199832" class="bulleted-list"><li style="list-style-type:disc">7:00am 包車前往羽田機場<ul id="8f50bb9d-6f2e-4e8d-a614-ab3174750a9b" class="bulleted-list"><li style="list-style-type:circle">羽田機場內有許多日式料理名店，也有許多人氣伴手禮。</li></ul></li></ul><div id="a4f2641e-c5b2-4dd0-b039-6a540010854d" class="column-list"><div id="230fe335-7703-41f5-905d-6b025f8fd7da" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="474bf2c1-2150-435a-a16f-1e0f5f405d92"><div style="font-size:1.5em"><span class="icon">🍜</span></div><div style="width:100%">羽田機場內美食：<br/><br/><strong>五代目花山烏冬</strong> 寬烏龍麵<br/>（第3航廈羽田機場花園的1樓）⚠️❗️❗️位於出境前❗️❗️<br/><figure id="96bae577-0f68-4e9f-838d-b10fa13bcdad" class="image"><a href="appendix/Untitled%2034.png"><img style="width:1000px" src="appendix/Untitled%2034.png"/></a></figure><p id="38c3b49a-5676-4747-bc6f-64b0b61ddf88" class="">
-</p><p id="da6a1d2c-7c6c-4af3-8625-ae0099502d7e" class=""><strong>六厘舍</strong> 沾麵（第3航廈3F）</p><figure id="cb2dbc4b-7914-422d-8c76-52c2ad4cb10d" class="image"><a href="appendix/Untitled%2035.png"><img style="width:275px" src="appendix/Untitled%2035.png"/></a></figure><p id="dec8c4f1-ddc2-4514-8cbd-4c29255489ea" class=""><br/><br/><strong>今半</strong> 壽喜燒<br/>（第3航廈4F 江戶小路）<br/></p><figure id="dbb50253-1e1c-4c11-8722-fe66f0327b37" class="image"><a href="appendix/Untitled%2036.png"><img style="width:430px" src="appendix/Untitled%2036.png"/></a></figure><p id="5cdb4c64-b991-42f5-b8ed-5fffd9b4b8de" class=""><br/><br/></p></div></figure><p id="edb1c610-8d98-4ade-8368-32cf0d5d2b61" class="">
-</p></div><div id="4a509db4-e2dd-4860-828a-a1155ae16b3a" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="4aaf9cdc-577c-4ea0-8f11-cdd6927c23e7"><div style="font-size:1.5em"><span class="icon">🎁</span></div><div style="width:100%">羽田機場內人氣甜點伴手禮：<br/><br/><strong>金澤萬久</strong> 金箔長崎蛋糕<br/>（第一航廈2F PIER 或是 第二航廈 2F 東京食賓館）<br/><figure id="f816fe86-6408-483d-ba3d-f50acf274403" class="image"><a href="appendix/Untitled%2037.png"><img style="width:555px" src="appendix/Untitled%2037.png"/></a></figure><p id="7812b4a8-2e75-4ac7-bd9e-c9a6429c5209" class="">
-</p><p id="866fe7c0-02e7-4f27-b0f9-ea705e877df3" class=""><strong>銀座あけぼ </strong>米果<br/>（第一航廈2F 特選和菓子館）<br/></p><figure id="18070e5e-e2c0-4e29-b948-9bc6d4ca4fb8" class="image"><a href="appendix/Untitled%2038.png"><img style="width:225px" src="appendix/Untitled%2038.png"/></a></figure></div></figure><p id="08d08024-6227-42c5-a4c8-bd488945a43d" class="">
-</p><p id="5f4422b8-6424-4bbe-af8b-d62b65bb65d8" class="">
-</p></div></div></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">地圖</summary><div class="indented"><figure id="c6cf5ff3-4b8b-42fd-b2cf-0878d5ebb4c0" class="image"><a href="appendix/japanMap.png"><img style="width:1143px" src="appendix/japanMap.png"/></a><figcaption>日本全國地圖</figcaption></figure><p id="e6d72b2e-271a-46cb-805d-ca11876d4b09" class="">
-</p><figure id="3988ed88-208d-4ca2-a218-055347bdc29d" class="image"><a href="appendix/smallMap.png"><img style="width:1418px" src="appendix/smallMap.png"/></a><figcaption>這次旅行會經過的城市</figcaption></figure><p id="fcea973a-16ad-41cd-9fff-2ef83694fe04" class="">
-</p></div></details><p id="1e685a47-a502-43c2-8188-936e206576a3" class="">
-</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	@media only screen {
+		body {
+			margin: 2em auto;
+			max-width: 900px;
+			color: rgb(55, 53, 47);
+		}
+	}
+	
+	body {
+		line-height: 1.5;
+		white-space: pre-wrap;
+	}
+	
+	a,
+	a.visited {
+		color: inherit;
+		text-decoration: underline;
+	}
+	
+	.pdf-relative-link-path {
+		font-size: 80%;
+		color: #444;
+	}
+	
+	h1,
+	h2,
+	h3 {
+		letter-spacing: -0.01em;
+		line-height: 1.2;
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+	
+	.page-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-top: 0;
+		margin-bottom: 0.75em;
+	}
+	
+	h1 {
+		font-size: 1.875rem;
+		margin-top: 1.875rem;
+	}
+	
+	h2 {
+		font-size: 1.5rem;
+		margin-top: 1.5rem;
+	}
+	
+	h3 {
+		font-size: 1.25rem;
+		margin-top: 1.25rem;
+	}
+	
+	.source {
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		padding: 1.5em;
+		word-break: break-all;
+	}
+	
+	.callout {
+		border-radius: 3px;
+		padding: 1rem;
+	}
+	
+	figure {
+		margin: 1.25em 0;
+		page-break-inside: avoid;
+	}
+	
+	figcaption {
+		opacity: 0.5;
+		font-size: 85%;
+		margin-top: 0.5em;
+	}
+	
+	mark {
+		background-color: transparent;
+	}
+	
+	.indented {
+		padding-left: 1.5em;
+	}
+	
+	hr {
+		background: transparent;
+		display: block;
+		width: 100%;
+		height: 1px;
+		visibility: visible;
+		border: none;
+		border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	@media only print {
+		img {
+			max-height: 100vh;
+			object-fit: contain;
+		}
+	}
+	
+	@page {
+		margin: 1in;
+	}
+	
+	.collection-content {
+		font-size: 0.875rem;
+	}
+	
+	.column-list {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.column {
+		padding: 0 1em;
+	}
+	
+	.column:first-child {
+		padding-left: 0;
+	}
+	
+	.column:last-child {
+		padding-right: 0;
+	}
+	
+	.table_of_contents-item {
+		display: block;
+		font-size: 0.875rem;
+		line-height: 1.3;
+		padding: 0.125rem;
+	}
+	
+	.table_of_contents-indent-1 {
+		margin-left: 1.5rem;
+	}
+	
+	.table_of_contents-indent-2 {
+		margin-left: 3rem;
+	}
+	
+	.table_of_contents-indent-3 {
+		margin-left: 4.5rem;
+	}
+	
+	.table_of_contents-link {
+		text-decoration: none;
+		opacity: 0.7;
+		border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+	}
+	
+	table,
+	th,
+	td {
+		border: 1px solid rgba(55, 53, 47, 0.09);
+		border-collapse: collapse;
+	}
+	
+	table {
+		border-left: none;
+		border-right: none;
+	}
+	
+	th,
+	td {
+		font-weight: normal;
+		padding: 0.25em 0.5em;
+		line-height: 1.5;
+		min-height: 1.5em;
+		text-align: left;
+	}
+	
+	th {
+		color: rgba(55, 53, 47, 0.6);
+	}
+	
+	ol,
+	ul {
+		margin: 0;
+		margin-block-start: 0.6em;
+		margin-block-end: 0.6em;
+	}
+	
+	li > ol:first-child,
+	li > ul:first-child {
+		margin-block-start: 0.6em;
+	}
+	
+	ul > li {
+		list-style: disc;
+	}
+	
+	ul.to-do-list {
+		padding-inline-start: 0;
+	}
+	
+	ul.to-do-list > li {
+		list-style: none;
+	}
+	
+	.to-do-children-checked {
+		text-decoration: line-through;
+		opacity: 0.375;
+	}
+	
+	ul.toggle > li {
+		list-style: none;
+	}
+	
+	ul {
+		padding-inline-start: 1.7em;
+	}
+	
+	ul > li {
+		padding-left: 0.1em;
+	}
+	
+	ol {
+		padding-inline-start: 1.6em;
+	}
+	
+	ol > li {
+		padding-left: 0.2em;
+	}
+	
+	.mono ol {
+		padding-inline-start: 2em;
+	}
+	
+	.mono ol > li {
+		text-indent: -0.4em;
+	}
+	
+	.toggle {
+		padding-inline-start: 0em;
+		list-style-type: none;
+	}
+	
+	/* Indent toggle children */
+	.toggle > li > details {
+		padding-left: 1.7em;
+	}
+	
+	.toggle > li > details > summary {
+		margin-left: -1.1em;
+	}
+	
+	.selected-value {
+		display: inline-block;
+		padding: 0 0.5em;
+		background: rgba(206, 205, 202, 0.5);
+		border-radius: 3px;
+		margin-right: 0.5em;
+		margin-top: 0.3em;
+		margin-bottom: 0.3em;
+		white-space: nowrap;
+	}
+	
+	.collection-title {
+		display: inline-block;
+		margin-right: 1em;
+	}
+	
+	.page-description {
+		margin-bottom: 2em;
+	}
+	
+	.simple-table {
+		margin-top: 1em;
+		font-size: 0.875rem;
+		empty-cells: show;
+	}
+	.simple-table td {
+		height: 29px;
+		min-width: 120px;
+	}
+	
+	.simple-table th {
+		height: 29px;
+		min-width: 120px;
+	}
+	
+	.simple-table-header-color {
+		background: rgb(247, 246, 243);
+		color: black;
+	}
+	.simple-table-header {
+		font-weight: 500;
+	}
+	
+	time {
+		opacity: 0.5;
+	}
+	
+	.icon {
+		display: inline-block;
+		max-width: 1.2em;
+		max-height: 1.2em;
+		text-decoration: none;
+		vertical-align: text-bottom;
+		margin-right: 0.5em;
+	}
+	
+	img.icon {
+		border-radius: 3px;
+	}
+	
+	.user-icon {
+		width: 1.5em;
+		height: 1.5em;
+		border-radius: 100%;
+		margin-right: 0.5rem;
+	}
+	
+	.user-icon-inner {
+		font-size: 0.8em;
+	}
+	
+	.text-icon {
+		border: 1px solid #000;
+		text-align: center;
+	}
+	
+	.page-cover-image {
+		display: block;
+		object-fit: cover;
+		width: 100%;
+		max-height: 30vh;
+	}
+	
+	.page-header-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	
+	.page-header-icon-with-cover {
+		margin-top: -0.72em;
+		margin-left: 0.07em;
+	}
+	
+	.page-header-icon img {
+		border-radius: 3px;
+	}
+	
+	.link-to-page {
+		margin: 1em 0;
+		padding: 0;
+		border: none;
+		font-weight: 500;
+	}
+	
+	p > .user {
+		opacity: 0.5;
+	}
+	
+	td > .user,
+	td > time {
+		white-space: nowrap;
+	}
+	
+	input[type="checkbox"] {
+		transform: scale(1.5);
+		margin-right: 0.6em;
+		vertical-align: middle;
+	}
+	
+	p {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	
+	.image {
+		border: none;
+		margin: 1.5em 0;
+		padding: 0;
+		border-radius: 0;
+		text-align: center;
+	}
+	
+	.code,
+	code {
+		background: rgba(135, 131, 120, 0.15);
+		border-radius: 3px;
+		padding: 0.2em 0.4em;
+		border-radius: 3px;
+		font-size: 85%;
+		tab-size: 2;
+	}
+	
+	code {
+		color: #eb5757;
+	}
+	
+	.code {
+		padding: 1.5em 1em;
+	}
+	
+	.code-wrap {
+		white-space: pre-wrap;
+		word-break: break-all;
+	}
+	
+	.code > code {
+		background: none;
+		padding: 0;
+		font-size: 100%;
+		color: inherit;
+	}
+	
+	blockquote {
+		font-size: 1.25em;
+		margin: 1em 0;
+		padding-left: 1em;
+		border-left: 3px solid rgb(55, 53, 47);
+	}
+	
+	.bookmark {
+		text-decoration: none;
+		max-height: 8em;
+		padding: 0;
+		display: flex;
+		width: 100%;
+		align-items: stretch;
+	}
+	
+	.bookmark-title {
+		font-size: 0.85em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 1.75em;
+		white-space: nowrap;
+	}
+	
+	.bookmark-text {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.bookmark-info {
+		flex: 4 1 180px;
+		padding: 12px 14px 14px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+	.bookmark-image {
+		width: 33%;
+		flex: 1 1 180px;
+		display: block;
+		position: relative;
+		object-fit: cover;
+		border-radius: 1px;
+	}
+	
+	.bookmark-description {
+		color: rgba(55, 53, 47, 0.6);
+		font-size: 0.75em;
+		overflow: hidden;
+		max-height: 4.5em;
+		word-break: break-word;
+	}
+	
+	.bookmark-href {
+		font-size: 0.75em;
+		margin-top: 0.25em;
+	}
+	
+	.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+	.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+	.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+	.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+	.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+	.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+	.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+	.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+	.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+	.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+	.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+	.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+	.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+	.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+	.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+	.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+	.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+	.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+	.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+	.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+	.highlight-default {
+		color: rgba(55, 53, 47, 1);
+	}
+	.highlight-gray {
+		color: rgba(120, 119, 116, 1);
+		fill: rgba(120, 119, 116, 1);
+	}
+	.highlight-brown {
+		color: rgba(159, 107, 83, 1);
+		fill: rgba(159, 107, 83, 1);
+	}
+	.highlight-orange {
+		color: rgba(217, 115, 13, 1);
+		fill: rgba(217, 115, 13, 1);
+	}
+	.highlight-yellow {
+		color: rgba(203, 145, 47, 1);
+		fill: rgba(203, 145, 47, 1);
+	}
+	.highlight-teal {
+		color: rgba(68, 131, 97, 1);
+		fill: rgba(68, 131, 97, 1);
+	}
+	.highlight-blue {
+		color: rgba(51, 126, 169, 1);
+		fill: rgba(51, 126, 169, 1);
+	}
+	.highlight-purple {
+		color: rgba(144, 101, 176, 1);
+		fill: rgba(144, 101, 176, 1);
+	}
+	.highlight-pink {
+		color: rgba(193, 76, 138, 1);
+		fill: rgba(193, 76, 138, 1);
+	}
+	.highlight-red {
+		color: rgba(212, 76, 71, 1);
+		fill: rgba(212, 76, 71, 1);
+	}
+	.highlight-gray_background {
+		background: rgba(241, 241, 239, 1);
+	}
+	.highlight-brown_background {
+		background: rgba(244, 238, 238, 1);
+	}
+	.highlight-orange_background {
+		background: rgba(251, 236, 221, 1);
+	}
+	.highlight-yellow_background {
+		background: rgba(251, 243, 219, 1);
+	}
+	.highlight-teal_background {
+		background: rgba(237, 243, 236, 1);
+	}
+	.highlight-blue_background {
+		background: rgba(231, 243, 248, 1);
+	}
+	.highlight-purple_background {
+		background: rgba(244, 240, 247, 0.8);
+	}
+	.highlight-pink_background {
+		background: rgba(249, 238, 243, 0.8);
+	}
+	.highlight-red_background {
+		background: rgba(253, 235, 236, 1);
+	}
+	.block-color-default {
+		color: inherit;
+		fill: inherit;
+	}
+	.block-color-gray {
+		color: rgba(120, 119, 116, 1);
+		fill: rgba(120, 119, 116, 1);
+	}
+	.block-color-brown {
+		color: rgba(159, 107, 83, 1);
+		fill: rgba(159, 107, 83, 1);
+	}
+	.block-color-orange {
+		color: rgba(217, 115, 13, 1);
+		fill: rgba(217, 115, 13, 1);
+	}
+	.block-color-yellow {
+		color: rgba(203, 145, 47, 1);
+		fill: rgba(203, 145, 47, 1);
+	}
+	.block-color-teal {
+		color: rgba(68, 131, 97, 1);
+		fill: rgba(68, 131, 97, 1);
+	}
+	.block-color-blue {
+		color: rgba(51, 126, 169, 1);
+		fill: rgba(51, 126, 169, 1);
+	}
+	.block-color-purple {
+		color: rgba(144, 101, 176, 1);
+		fill: rgba(144, 101, 176, 1);
+	}
+	.block-color-pink {
+		color: rgba(193, 76, 138, 1);
+		fill: rgba(193, 76, 138, 1);
+	}
+	.block-color-red {
+		color: rgba(212, 76, 71, 1);
+		fill: rgba(212, 76, 71, 1);
+	}
+	.block-color-gray_background {
+		background: rgba(241, 241, 239, 1);
+	}
+	.block-color-brown_background {
+		background: rgba(244, 238, 238, 1);
+	}
+	.block-color-orange_background {
+		background: rgba(251, 236, 221, 1);
+	}
+	.block-color-yellow_background {
+		background: rgba(251, 243, 219, 1);
+	}
+	.block-color-teal_background {
+		background: rgba(237, 243, 236, 1);
+	}
+	.block-color-blue_background {
+		background: rgba(231, 243, 248, 1);
+	}
+	.block-color-purple_background {
+		background: rgba(244, 240, 247, 0.8);
+	}
+	.block-color-pink_background {
+		background: rgba(249, 238, 243, 0.8);
+	}
+	.block-color-red_background {
+		background: rgba(253, 235, 236, 1);
+	}
+	.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+	.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+	.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+	.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+	.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+	.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+	.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+	.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+	.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+	.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+	.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+	.select-value-color-pageGlass { background-color: undefined; }
+	.select-value-color-washGlass { background-color: undefined; }
+	
+	.checkbox {
+		display: inline-flex;
+		vertical-align: text-bottom;
+		width: 16;
+		height: 16;
+		background-size: 16px;
+		margin-left: 2px;
+		margin-right: 5px;
+	}
+	
+	.checkbox-on {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+	}
+	
+	.checkbox-off {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+	}
+		
+	</style></head><body><article id="d283e679-249c-4f97-98a0-2b0c3a19077c" class="page sans"><header><h1 class="page-title">🇯🇵 東京靜岡旅行 20240313-0319</h1><p class="page-description"></p></header><div class="page-body"><p id="d924bd85-7fee-4c8f-bec7-100c6d740240" class="">(2024.02.20更新)</p><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">行前注意事項：</summary><div class="indented"><ul id="63f0bec6-3537-4124-9fd7-773c7996c3fd" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">攜帶輕羽絨衣或是保暖衣物，旅行期間溫度大約在5-15度之間</span><div class="indented"></div></li></ul><ul id="dc846e2e-b892-453f-9442-4c195ac51dd8" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">不需要攜帶泳衣，日本溫泉為裸湯</span><div class="indented"></div></li></ul><ul id="51c986e3-e235-4e82-8381-12d63c52b204" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">每天大約有2-3小時可以在車上休息回血，可以放心睡覺</span><div class="indented"></div></li></ul><ul id="d3ceb4ad-67b4-4b95-9327-9682e39120aa" class="toggle"><li><details open=""><summary>關於在日本使用手機：</summary><ul id="8c2b0a11-1705-4206-bad9-d784210331cf" class="bulleted-list"><li style="list-style-type:disc">中華電信可以開通日本漫遊，有 1 GB $149 / 7天 或是 2 GB $249 / 7天 方案，會上傳照片或是看影片的話建議選2GB → <a href="https://www.cht.com.tw/home/campaign/roamingplan/index/plan?itemid=655DA448F0DC44199F00CE26138CF294">方案連結</a></li></ul><ul id="37af35ea-9dc1-48f1-b625-00fc52f82fcb" class="bulleted-list"><li style="list-style-type:disc">Suica卡（台灣暱稱西瓜卡）功能像是台灣的悠遊卡，可以支付地鐵費用以及小額購物，可以在iPhone把Suica卡加入手機的錢包，在東京搭地鐵時就可以不用另外買票。第一次儲值可以先加日幣1000就好。詳細操作步驟可以看這裡 → <a href="https://support.apple.com/zh-tw/HT207155">如何在 iPhone 或 Apple Watch 上加入新的 Suica、PASMO 或 ICOCA 卡</a></li></ul></details></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第一天] 3/13 星期三：東京 </summary><div class="indented"><ul id="70501d23-f7e8-4290-88fb-4db83f291c00" class="bulleted-list"><li style="list-style-type:disc">上午沈爸沈媽集合飯店放東西</li></ul><ul id="00dfd494-2e8c-47a5-b024-2d2cf9d8a161" class="bulleted-list"><li style="list-style-type:disc">11:05am 羽田機場鄧爸鄧媽降落，飯店放東西</li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[午餐] 2pm 銀座 根室花丸 迴轉壽司</summary><div class="indented"><ul id="2b18ee5b-19d1-4334-b178-1f9ae7d65820" class="bulleted-list"><li style="list-style-type:disc">搭電車前往台場 約20分鐘</li></ul><ul id="8a73f4e2-2210-42bc-abc1-e411f0a47406" class="bulleted-list"><li style="list-style-type:disc">16:00-16:30 入場TeamLab</li></ul><ul id="054e6f6f-2b48-4e56-a336-06092f6283a6" class="bulleted-list"><li style="list-style-type:disc">搭電車回銀座 約20分鐘</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[晚餐] 7:30 pm 銀座 玄品河豚</summary><div class="indented"><ul id="0291140e-ec9f-4278-bbd1-94c504134e3d" class="bulleted-list"><li style="list-style-type:disc">散步半小時回飯店</li></ul><ul id="1fc6f64e-09d8-4a7b-bda8-a0909f93c87a" class="bulleted-list"><li style="list-style-type:disc">晚上住<a href="https://www.hilton.com/en/hotels/tyocici-conrad-tokyo/">Conrad Tokyo</a></li></ul></div></details><div id="61db1f25-9ede-4cf8-941e-5603d3bc3b29" class="column-list"><div id="e315f9b3-e2ed-4efe-a74b-b69a43c98c81" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="94e6255c-6f7a-4a38-9860-6c98b22302de"><div style="font-size:1.5em"><span class="icon">🍣</span></div><div style="width:100%"><strong>根室花丸迴轉壽司</strong><p id="1500a7b4-dbf3-471a-9980-c06b937d343f" class="">北海道札幌來的人氣食材新鮮迴轉壽司</p><figure id="e422a933-497a-45f9-9ade-bf0a1f93af7c" class="image"><a href="appendix/Untitled.png"><img style="width:750px" src="appendix/Untitled.png"/></a></figure></div></figure><p id="503df3a2-b1ec-4530-9f1d-2acc02ad1731" class="">
+	</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b1221a6e-1160-45ef-ae54-49e6815e17cb"><div style="font-size:1.5em"><span class="icon">🐡</span></div><div style="width:100%"><strong>玄品河豚</strong><br/>日式河豚料理，套餐有涼拌河豚、生魚片、炸河豚、河豚火鍋<br/><figure id="4a41aa31-d636-4a9d-8e34-9898fefc8a13" class="image"><a href="appendix/Untitled%201.png"><img style="width:276px" src="appendix/Untitled%201.png"/></a></figure></div></figure></div><div id="a2513d3d-1db1-4f15-b7c6-1b69344139df" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="98f66ba6-4d92-417c-8686-41d673e0e15d"><div style="font-size:1.5em"><span class="icon">⭐</span></div><div style="width:100%"><strong>TeamLab Planet</strong><br/>用科技打造人跟自然的互動的藝術展覽<br/><p id="43abb9a3-853e-46f3-b4a2-a657618db1df" class="">(TeamLab參觀需要把鞋子跟包包寄放在置物櫃，因為部分作品需要走進小腿深的水池中，另外部分作品地板是鏡子，穿褲子較為適合）</p><figure id="ae60e559-4a85-41fa-abd0-59ef45b582e6" class="image"><a href="appendix/Untitled%202.png"><img style="width:275px" src="appendix/Untitled%202.png"/></a></figure><figure id="5d6dc799-c5a0-43fd-b055-9ad431f929c3" class="image"><a href="appendix/Untitled%203.png"><img style="width:225px" src="appendix/Untitled%203.png"/></a></figure></div></figure><p id="d48e0dc6-1955-4152-bbb4-4d1241306019" class="">
+	</p></div></div></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第二天] 3/14 星期四：鎌倉、江之島</summary><div class="indented"><ul id="4c01af99-0af9-4add-9ae0-f753b3600ce9" class="bulleted-list"><li style="list-style-type:disc">飯店吃早餐</li></ul><ul id="4bc0fc87-dbc3-4aaa-b407-020f3615aff4" class="bulleted-list"><li style="list-style-type:disc">車程45分鐘前往鎌倉</li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[午餐] 鎌倉 小町通り Caraway 咖哩或附近店家</summary><div class="indented"><blockquote id="98ea2216-13e1-4ce2-9865-595c4216c2aa" class="">是枝裕和的電影《海街日記》就是在鎌倉取景</blockquote><ul id="62c287cb-1b6d-4b51-8121-e9120a984ce3" class="bulleted-list"><li style="list-style-type:disc">車程15分鐘抵達鎌倉高校前站</li></ul><ul id="8bbde0b1-5765-4ef2-bc93-451a2303d05f" class="bulleted-list"><li style="list-style-type:disc">車程20分鐘抵達江之島</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[晚餐] 江之島</summary><div class="indented"><ul id="9b9719ba-7425-437a-bfe5-9d1af7604b15" class="bulleted-list"><li style="list-style-type:disc">車程20分鐘抵達鐮倉王子大飯店</li></ul><ul id="081dbc62-1b99-46b3-aa79-4be52391ec87" class="bulleted-list"><li style="list-style-type:disc">住<a href="https://www.princehotels.com/kamakura/zh-hant/">鐮倉王子大飯店</a></li></ul></div></details><div id="cbed4dd0-92e1-4222-96ab-02812eb2707a" class="column-list"><div id="7debc151-37aa-4edc-88c4-96d33d6bfe03" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="243a7c41-452e-4745-a9f4-dda86077dd7a"><div style="font-size:1.5em"><span class="icon">🍡</span></div><div style="width:100%">鎌倉小町通り名物：<br/><br/><strong>Arbre noir 芝麻抹茶口味鎌倉燒</strong><figure id="437e235f-8bb4-471d-ad2f-e2f6cc122c36" class="image"><a href="appendix/Untitled%204.png"><img style="width:240px" src="appendix/Untitled%204.png"/></a></figure><p id="e55f6022-6e26-4595-9064-a92ad3fc8991" class="">
+	</p><p id="0a34554a-759d-47e5-9d04-4f28e61b77ec" class="">夢見屋 日式糯米團子</p><figure id="e162e387-b6a4-47b5-9d1a-f876289a9f16" class="image"><a href="appendix/Untitled%205.png"><img style="width:240px" src="appendix/Untitled%205.png"/></a></figure></div></figure><p id="2de52cc0-719c-4f03-a76c-28542cac7268" class="">
+	</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="256ac248-e1b4-4457-881a-cbd24a5cbd67"><div style="font-size:1.5em"><span class="icon">🍘</span></div><div style="width:100%">江之島名物：<br/>＊吻仔魚蓋飯<br/><figure id="7c0338e3-435b-4c9d-96aa-145586d5eefb" class="image"><a href="appendix/Untitled%206.png"><img style="width:640px" src="appendix/Untitled%206.png"/></a></figure><p id="8eb986e9-c27c-458b-a64d-5d9d52f3d075" class=""><br/>＊朝日堂 章魚/龍蝦仙貝<br/></p><figure id="1f5a8a6e-0755-46c7-b4f5-489f673c21ba" class="image"><a href="appendix/Untitled%207.png"><img style="width:860px" src="appendix/Untitled%207.png"/></a></figure></div></figure></div><div id="77fdd3e2-02bf-4b72-8e6a-a672691de369" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b1ed5c42-a574-4f17-9ac7-eb03f6eb341e"><div style="font-size:1.5em"><span class="icon">🚉</span></div><div style="width:100%"><strong>鎌倉高校前站</strong><br/>《灌籃高手》平交道經典場景<br/><figure id="383de641-62a7-40f4-b40d-abcb791ead27" class="image"><a href="appendix/Untitled%208.png"><img style="width:245px" src="appendix/Untitled%208.png"/></a></figure><p id="5c206ef2-c858-440d-b863-e01c94881c79" class="">
+	</p></div></figure><p id="ede3fda4-2744-49d7-b16c-913fdd437472" class="">
+	</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="255537c6-525b-440d-abb8-2593d809b510"><div style="font-size:1.5em"><span class="icon">🌸</span></div><div style="width:100%">賞櫻景點：<br/>長谷寺<br/><figure id="7790e80b-c028-4970-8f46-eac97e5e8da7" class="image"><a href="appendix/Untitled%209.png"><img style="width:720px" src="appendix/Untitled%209.png"/></a></figure><p id="3a52c28e-36c4-486a-bdec-0938a16e1211" class="">鶴岡八幡宮</p><figure id="7abcd3b2-061b-4259-abe5-4c71c31efd71" class="image"><a href="appendix/Untitled%2010.png"><img src="appendix/Untitled%2010.png"/></a></figure><p id="3e34b96d-e950-40cd-b265-1446fd3f5c10" class="">高德院/鎌倉大佛</p><figure id="37f90e86-664f-491c-b105-9b6db69eb0e0" class="image"><a href="appendix/Untitled%2011.png"><img style="width:720px" src="appendix/Untitled%2011.png"/></a></figure></div></figure><p id="6ae1ebf8-7f7b-403a-92cc-18682c1b77ac" class="">
+	</p></div></div><p id="16ecfaff-07ca-4a98-a2a6-8a4eacd15c46" class="">
+	</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第三天] 3/15 星期五：熱海、伊豆溫泉</summary><div class="indented"><ul id="5ebe4f6f-abe3-491e-8583-220f01b507ac" class="bulleted-list"><li style="list-style-type:disc">[早餐] Cafe Yoridokoro 在鐵道旁吃日式早餐(7-9am，可能需要排隊)或是其他</li></ul><ul id="b5938ae8-cdad-46eb-a609-3836ce4b6946" class="bulleted-list"><li style="list-style-type:disc">車程一小時前往熱海MOA art museum</li></ul><ul id="fa7868da-aaa3-4389-92d0-514a92aab058" class="bulleted-list"><li style="list-style-type:disc">MOA</li></ul><ul id="2d9977b8-00f0-4b4d-8ded-06681cc9b98d" class="bulleted-list"><li style="list-style-type:disc">車程10分鐘前往熱海老街</li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[午餐] 熱海溫泉老街 熱海魚・大食堂</summary><div class="indented"><ul id="4645da09-d05c-4dbb-8918-69214f5b8132" class="bulleted-list"><li style="list-style-type:disc">熱海老街散步<ul id="7735878b-5f63-4015-ae52-ea31e2499d1f" class="bulleted-list"><li style="list-style-type:circle">熱海布丁</li></ul></li></ul><ul id="8182919d-eb7b-4619-929a-78f5d9f5df47" class="bulleted-list"><li style="list-style-type:disc">車程10分鐘前往COEDA HOUSE喝咖啡</li></ul><ul id="54fbd65d-0513-4b47-a197-ca0fed8732c1" class="bulleted-list"><li style="list-style-type:disc">車程45分鐘前往旅館</li></ul><ul id="2ad329d0-6ef5-41ce-ab2d-1c20e3abf9be" class="bulleted-list"><li style="list-style-type:disc">飯店內泡湯</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[晚餐] 溫泉旅館內晚餐</summary><div class="indented"><ul id="4de20399-e475-49fa-8fe3-c9e64d3573a9" class="bulleted-list"><li style="list-style-type:disc">住伊豆市溫泉旅館石のや</li></ul></div></details><div id="11ffe4fa-0366-42dd-9d32-6f76266d6539" class="column-list"><div id="f73df716-d14e-4cfc-b74c-63527a9722da" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="0f1058ab-6fdf-4da4-8834-0d003a7db00c"><div style="font-size:1.5em"><span class="icon">🌺</span></div><div style="width:100%">熱海MOA Museum of Art：<figure id="7f4688b9-54eb-4cfe-b533-498a78a15921" class="image"><a href="appendix/Untitled%2012.png"><img style="width:1360px" src="appendix/Untitled%2012.png"/></a></figure><p id="d3e1d9ff-ffe4-420d-9cb5-5ca2a13e9fce" class=""><br/>晴天時可以看到初島和伊豆大島的海景博物館，使用屋久杉、行者杉、黑灰泥和榻榻米等日本傳統材料打造。<br/></p><figure id="f79e3aff-98ff-46b2-826a-095438c015c7" class="image"><a href="appendix/Untitled%2013.png"><img style="width:1360px" src="appendix/Untitled%2013.png"/></a></figure></div></figure><p id="2bf22958-139d-40cb-9f8c-6cec3539fe70" class="">
+	</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="d8ea7ce0-38a3-437a-a08a-281b63abfd0e"><div style="font-size:1.5em"><span class="icon">☕</span></div><div style="width:100%">COEDA HOUSE：<br/>隈研吾所設計的海景咖啡廳<br/><figure id="ce71c033-264b-4e4d-9bc3-5886d816da12" class="image"><a href="appendix/Untitled%2014.png"><img style="width:275px" src="appendix/Untitled%2014.png"/></a></figure><p id="06df4f9a-64bc-4fc2-8ff8-631a3be9731a" class=""><br/>世界最大的盆栽「鳳凰之松」<br/></p><figure id="8eda9eff-0883-4857-b4d5-bcb6ffbb5d1d" class="image"><a href="appendix/Untitled%2015.png"><img style="width:259px" src="appendix/Untitled%2015.png"/></a></figure></div></figure><p id="a1531d24-7676-4cb4-8df5-28c87f30987c" class="">
+	</p></div><div id="9ebf03cd-0ffe-48b5-82e4-d0eb5baf1413" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="53602fba-f492-45f4-ae2f-9bf332ed01a7"><div style="font-size:1.5em"><span class="icon">🍮</span></div><div style="width:100%">熱海名物：<br/>＊熱海布丁<br/><figure id="cbf298e9-393d-432e-ace5-fb7ecb04a5b0" class="image"><a href="appendix/Untitled%2016.png"><img style="width:275px" src="appendix/Untitled%2016.png"/></a></figure><p id="73d7fe41-b96e-47f9-bf74-cedcb131c029" class="">
+	</p><p id="3935d3df-b505-4b0b-a6cd-9e93b648608d" class="">＊熱海魚 大食堂</p><figure id="ae388ae6-92f6-446b-b409-095d0e236ae1" class="image"><a href="appendix/Untitled%2017.png"><img style="width:1400px" src="appendix/Untitled%2017.png"/></a></figure></div></figure></div></div></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第四天] 3/16 星期六：靜岡 🗻</summary><div class="indented"><ul id="950db055-55f4-4f43-be89-30d5993b8c16" class="bulleted-list"><li style="list-style-type:disc">早上在飯店吃早餐</li></ul><ul id="c00b9b9e-3035-4e9a-bdb7-6be37df688d2" class="bulleted-list"><li style="list-style-type:disc">車程1小時前往午餐</li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[午餐] 櫻花蝦料理 kurasawaya</summary><div class="indented"><ul id="a6f9585d-e0df-4a20-8309-d23ae736fef0" class="bulleted-list"><li style="list-style-type:disc">車程30分鐘前往日本平</li></ul><ul id="9653de30-9461-42cb-afcd-98b9f9a6aec2" class="bulleted-list"><li style="list-style-type:disc">日本平觀賞富士山<ul id="c1b61e1c-14af-44c9-80d6-236eeb2927c3" class="bulleted-list"><li style="list-style-type:circle">時間許可的話可以在日本平飯店用下午茶</li></ul></li></ul><ul id="9123104b-b8d2-440c-a281-7fa2c0acc815" class="bulleted-list"><li style="list-style-type:disc">車程30分鐘前往靜岡市區</li></ul><ul id="5945f3e2-97e2-45fc-b307-488207ce77ea" class="bulleted-list"><li style="list-style-type:disc">靜岡市區 <ul id="6d443777-c55d-477a-b168-f50c325c45af" class="bulleted-list"><li style="list-style-type:circle">Maruzen Tea Roastery &amp; 丸七製茶 ななや (nanaya) 吃不同濃度的抹茶冰淇淋</li></ul><ul id="c7602550-7b41-44c5-b122-2abc36227882" class="bulleted-list"><li style="list-style-type:circle">青葉黑輪街吃關東煮散步</li></ul></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[晚餐] うなぎ満嬉多（待確認）</summary><div class="indented"><ul id="2110a2b4-627b-4fad-84b9-f0c3abaf2670" class="bulleted-list"><li style="list-style-type:disc">車程30分鐘前往飯店</li></ul><ul id="cc5c48d9-59eb-4494-a4e0-b9a377b21e53" class="bulleted-list"><li style="list-style-type:disc">住靜岡 <a href="https://www.hatagoinn.com/en/hsy/">Hatago Inn</a></li></ul></div></details><div id="afb9773e-dfcd-49ac-9a73-1d526cabf87f" class="column-list"><div id="3909effd-b1c5-4913-b973-ad287f2e7d7f" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b4d92211-bda8-42cb-8b25-ed77f8ca3cda"><div style="font-size:1.5em"><span class="icon">🦐</span></div><div style="width:100%"><strong>Kurasawaya 午餐 櫻花蝦</strong><br/>靜岡線美食「駿河灣的珍珠」櫻花蝦<br/><figure id="a7001439-8b2e-4cfa-ab2a-9bf3bb5ad858" class="image"><a href="appendix/Untitled%2018.png"><img style="width:430px" src="appendix/Untitled%2018.png"/></a></figure></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="fc4fb1d7-c8fa-47e7-b7f9-83e1eb409b8d"><div style="font-size:1.5em"><span class="icon">🗻</span></div><div style="width:100%"><strong>日本平</strong><br/>隈研吾所設計的觀景台<br/>可眺望駿河灣、清水港、三保松原和富士山<br/><figure id="c7178ff9-6cc9-4ec1-95f4-9f50593bea50" class="image"><a href="appendix/Untitled%2019.png"><img style="width:600px" src="appendix/Untitled%2019.png"/></a></figure></div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="ab5cc2d9-71e7-4599-aa19-6034871aff4d"><div style="font-size:1.5em"><span class="icon">🥢</span></div><div style="width:100%">靜岡市區食物：<br/>三河屋 關東煮<br/><figure id="fc61de0e-5f70-4c65-a3a4-bb725c061a24" class="image"><a href="appendix/Untitled%2020.png"><img style="width:640px" src="appendix/Untitled%2020.png"/></a></figure></div></figure></div><div id="01075386-2146-46ae-8ca0-d76aa19d9dfc" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="12bb0c90-bb54-479e-9668-7f9a61093d73"><div style="font-size:1.5em"><span class="icon">🍨</span></div><div style="width:100%">靜岡市區抹茶甜點：<br/><br/><strong>Maruzen Tea Roastery</strong><figure id="c677acd9-c0cd-428a-97fd-2da4a76eaaf3" class="image"><a href="appendix/Untitled%2021.png"><img style="width:259px" src="appendix/Untitled%2021.png"/></a></figure><p id="ecac64d0-3a05-4b65-b564-bf3d1095a338" class=""><strong>丸七製茶 ななや</strong></p><figure id="67a86f84-c12d-42b4-9eca-ce9672539981" class="image"><a href="appendix/Untitled%2022.png"><img style="width:225px" src="appendix/Untitled%2022.png"/></a></figure></div></figure><p id="ddd182c1-a3c9-450d-9cc1-b12221386ad5" class="">
+	</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="39e8d924-87c1-4457-ab00-4285d5ffd7e1"><div style="font-size:1.5em"><span class="icon">🌸</span></div><div style="width:100%">靜岡賞櫻景點：<br/>日本平<br/>美和 桜並木 (安倍川沿岸)<br/>燒津市 栃山川堤富士見桜<br/>靜岡市 駿府城公園<br/></div></figure></div></div></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第五天] 3/17 星期日：靜岡 🍵</summary><div class="indented"><ul id="35334ec5-16ef-4ccc-a088-c48777b6f928" class="bulleted-list"><li style="list-style-type:disc">[早餐] 飯店早餐或是附近Komeda’s coffee</li></ul><ul id="f372a862-d98e-4109-b1aa-82c58e3ea90e" class="bulleted-list"><li style="list-style-type:disc">車程約1小時20分鐘前往奧大井湖地區<ul id="44f031e7-d202-44c9-b0d5-890c28dff875" class="bulleted-list"><li style="list-style-type:circle">夢之吊橋（約70分鐘的步道）</li></ul><ul id="6e84d440-c5af-41a3-a942-55c26ec99d27" class="bulleted-list"><li style="list-style-type:circle">峽谷溫泉街</li></ul></li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[午餐] 峽谷溫泉街</summary><div class="indented"><ul id="a132317f-2661-4e77-bc04-2fd7d46ab514" class="bulleted-list"><li style="list-style-type:disc">車程約30分鐘前往奧大井湖上站看蒸汽火車</li></ul><ul id="0767f201-1bab-4537-a5a9-416da03a62de" class="bulleted-list"><li style="list-style-type:disc">車程約40分鐘前往茶園</li></ul><ul id="46c53bac-1d8b-4be7-86ef-a048d922e052" class="bulleted-list"><li style="list-style-type:disc">參觀茶園 川根本町のお茶農家<ul id="2c0cab6f-b4ca-4969-9b8b-1ec3425e6db9" class="bulleted-list"><li style="list-style-type:circle">茶園導覽、品茶</li></ul></li></ul><ul id="dca628a9-f6fe-45a2-bfbf-d7c8d285564e" class="bulleted-list"><li style="list-style-type:disc">車程約一小時前往晚餐</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[晚餐] <strong>とろろ汁の丁子屋（待確認）</strong></summary><div class="indented"><ul id="f57a3418-1b54-41fc-be6f-dc81fe5ab844" class="bulleted-list"><li style="list-style-type:disc">車程30分鐘前往飯店</li></ul><ul id="5cfded30-627a-4a34-86cc-180f4c151284" class="bulleted-list"><li style="list-style-type:disc">住靜岡 <a href="https://www.hatagoinn.com/en/hsy/">Hatago Inn</a></li></ul></div></details><div id="54a77411-967c-4259-9dfa-ecbb0d9552c0" class="column-list"><div id="ac0dd028-1b75-4733-8bb5-ef841f9b0021" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="a007c67c-6a8a-422a-9795-44f0f0b2942b"><div style="font-size:1.5em"><span class="icon">🫖</span></div><div style="width:100%"><strong>KADODE OOIGAWA</strong><br/>複合式靜岡茶葉推廣中心<br/><figure id="815ddd11-1d28-4e06-bf5b-5f36fff0cbad" class="image"><a href="appendix/Untitled%2023.png"><img style="width:259px" src="appendix/Untitled%2023.png"/></a></figure><p id="590a7082-c71b-4132-8023-70af274c66bf" class="">
+	</p><p id="94bba07e-6a33-4920-a8d4-039f1f763150" class=""><strong>茶之鄉博物館</strong></p><p id="b56641e9-c4c1-4898-b703-72dbc0af0ddb" class="">介紹世界各國茗茶歷史、飲茶茶具以及飲茶習慣，也附設日本傳統庭院及茶室。</p><p id="8eb6e791-4808-4f8e-a9bf-f095179404c0" class="">靜岡縣所生產的綠茶與宇治茶並稱「日本2大茶」，而牧之原台地以及其周邊為日本最大的綠茶產地，佔日本全國種生產量的二分之一。</p><figure id="e6cbc8fc-baf2-4880-8459-ff4c88d79897" class="image"><a href="appendix/Untitled%2024.png"><img style="width:275px" src="appendix/Untitled%2024.png"/></a></figure></div></figure><p id="4fbf4f5c-95d7-4d48-89a6-0e61f9aba2f5" class="">
+	</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="20376952-e36b-45fe-9034-910072593f18"><div style="font-size:1.5em"><span class="icon">🌉</span></div><div style="width:100%"><strong>奥大井湖 </strong><br/><br/>夢之吊橋，位於川根本町的寸又峽，是橫跨在大間大壩湖的高8公尺、長90公尺的吊橋<br/><figure id="f57ebfe8-531f-46ec-bdae-39cc9f78ae2f" class="image"><a href="appendix/Untitled%2025.png"><img style="width:1450px" src="appendix/Untitled%2025.png"/></a></figure><p id="a5bbb55d-4557-4736-b1b9-00655fa2a736" class="">
+	</p><p id="1ab31d01-229b-45da-b2bc-a1e8ee20adab" class="">奥大井湖上車站，有蒸汽火車鐵軌穿越</p><figure id="9892cfa3-47b4-48d6-b2d3-718e3a8ddc4b" class="image"><a href="appendix/Untitled%2026.png"><img style="width:870px" src="appendix/Untitled%2026.png"/></a></figure></div></figure><p id="af9e3a29-9e6b-4f25-84ed-b2a7413cb4a2" class="">
+	</p></div><div id="e3b46e9d-b282-49fe-a831-42297a9d661c" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="e54ef30d-c491-4ba1-8fda-026639546284"><div style="font-size:1.5em"><span class="icon">🍵</span></div><div style="width:100%"><strong>川根本町のお茶農家</strong><br/>（備有中文翻譯）<br/><p id="cb0b9a1c-240a-4514-9508-b36702235c58" class="">2022年榮獲日本第一農林水產大臣獎。<br/>體驗內容：茶園導覽、品茶（含甜點）<br/><br/></p><figure id="045f7525-48ea-45ac-9320-52703c477258" class="image"><a href="appendix/Untitled%2027.png"><img style="width:1227px" src="appendix/Untitled%2027.png"/></a></figure><figure id="f0586d3d-6fa1-412a-862b-7ad959f4bdc5" class="image"><a href="appendix/Untitled%2028.png"><img style="width:1189px" src="appendix/Untitled%2028.png"/></a></figure></div></figure><p id="19cc0630-727d-4589-8701-438b70637b53" class="">
+	</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="9153978e-2514-4847-af4b-89800a96132e"><div style="font-size:1.5em"><span class="icon">🍱</span></div><div style="width:100%"><strong>とろろ汁の丁子屋 </strong><br/>日本國家有形文化財<br/><figure id="0a867f67-c5bd-4812-80c4-c45407a598c9" class="image"><a href="appendix/Untitled%2029.png"><img style="width:330px" src="appendix/Untitled%2029.png"/></a></figure><figure id="9437c671-3f58-4cd7-bfdf-470f39dec398" class="image"><a href="appendix/Untitled%2030.png"><img style="width:281px" src="appendix/Untitled%2030.png"/></a></figure><figure id="e2176fb0-00eb-48ae-a96d-23964c3a5bb6" class="image"><a href="appendix/Untitled%2031.png"><img style="width:275px" src="appendix/Untitled%2031.png"/></a></figure><p id="c4a66049-c5de-4685-a779-99b9fddaffc1" class="">山藥泥聽說很好吃</p><figure id="b44fa094-3671-4352-b3a9-321169beadf2" class="image"><a href="appendix/Untitled%2032.png"><img style="width:330px" src="appendix/Untitled%2032.png"/></a></figure></div></figure></div></div><p id="46c39ab2-b7a9-4e2d-9990-44342a341bf1" class="">
+	</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第六天] 3/18 星期一：東京 🌸</summary><div class="indented"><ul id="616fb5bb-bd31-48bc-ba61-75976b554dd7" class="bulleted-list"><li style="list-style-type:disc">[早餐] 飯店早餐或附近店家</li></ul><ul id="d4b0fe64-7183-4761-baa7-2f0d33331a57" class="bulleted-list"><li style="list-style-type:disc">車程15分鐘前往茶之鄉博物館</li></ul><ul id="00761424-1dc6-458b-8c5c-9a81c777160d" class="bulleted-list"><li style="list-style-type:disc">茶之鄉博物館</li></ul><ul id="0eebbfda-567e-4ec6-b5fc-e84c1b1a0769" class="bulleted-list"><li style="list-style-type:disc">車程15分鐘前往KADODE OOIGAWA</li></ul><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[午餐] KADODE OOIGAWA</summary><div class="indented"><ul id="0b2a735a-87b7-4d68-8858-01a000b62cfa" class="bulleted-list"><li style="list-style-type:disc">車程3小時前往東京，中間找地方休息看櫻花</li></ul><ul id="186b81ad-8695-496d-bd14-c54c27e8bb22" class="bulleted-list"><li style="list-style-type:disc">賞櫻行程<ul id="d8aa415a-61f0-4ffa-a348-634bc2fe37f4" class="bulleted-list"><li style="list-style-type:circle">目黑川</li></ul></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">[晚餐] 未定</summary><div class="indented"><ul id="81554a29-a181-44de-b21b-91e0c9e9d209" class="bulleted-list"><li style="list-style-type:disc">20:00東京車站還車 </li></ul><ul id="1e66b3a8-80e4-4113-ab19-9e965b958551" class="bulleted-list"><li style="list-style-type:disc">前往飯店（待訂）</li></ul></div></details><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="edadaef5-ddbf-479c-9b04-b3c5a8c451bb"><div style="font-size:1.5em"><span class="icon">🌸</span></div><div style="width:100%">東京賞櫻景點：<br/>＊千鳥淵公園<br/>＊鄰接六本木之丘森大樓和朝日電視台總部的「毛利庭園」<br/>＊上野恩賜公園<br/>＊新宿御苑<br/>＊目黑川<br/><figure id="3a935cb1-49db-40a1-a72f-84b33becbd59" class="image"><a href="appendix/Untitled%2033.png"><img style="width:275px" src="appendix/Untitled%2033.png"/></a></figure></div></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">[第七天] 3/19 星期二：回家</summary><div class="indented"><ul id="626bd65d-0534-4488-8741-d2dad48d13cb" class="bulleted-list"><li style="list-style-type:disc">起得來的話可以去附近的豐洲市場<ul id="dc1a93e6-da65-4714-8b77-507e49620ee5" class="bulleted-list"><li style="list-style-type:circle">進行鮪魚競標的場所在7街區的「水產批發區」。時間為上午5點半開始，過程大約1個小時左右。（可惜我們沒有參與到見習的抽籤）</li></ul></li></ul><ul id="4cb16980-5ba9-4f95-a823-28d8af199832" class="bulleted-list"><li style="list-style-type:disc">7:00am 包車前往羽田機場<ul id="8f50bb9d-6f2e-4e8d-a614-ab3174750a9b" class="bulleted-list"><li style="list-style-type:circle">羽田機場內有許多日式料理名店，也有許多人氣伴手禮。</li></ul></li></ul><div id="8e5d0d9e-21ec-415f-82ab-735c554f9f9e" class="column-list"><div id="10907df9-bb81-4062-b0f2-a967d3246f50" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="474bf2c1-2150-435a-a16f-1e0f5f405d92"><div style="font-size:1.5em"><span class="icon">🍜</span></div><div style="width:100%">羽田機場內美食：<br/><br/><strong>五代目花山烏冬</strong> 寬烏龍麵<br/>（第3航廈羽田機場花園的1樓）⚠️❗️❗️位於出境前❗️❗️<br/><figure id="96bae577-0f68-4e9f-838d-b10fa13bcdad" class="image"><a href="appendix/Untitled%2034.png"><img style="width:1000px" src="appendix/Untitled%2034.png"/></a></figure><p id="38c3b49a-5676-4747-bc6f-64b0b61ddf88" class="">
+	</p><p id="da6a1d2c-7c6c-4af3-8625-ae0099502d7e" class=""><strong>六厘舍</strong> 沾麵（第3航廈3F）</p><figure id="cb2dbc4b-7914-422d-8c76-52c2ad4cb10d" class="image"><a href="appendix/Untitled%2035.png"><img style="width:275px" src="appendix/Untitled%2035.png"/></a></figure><p id="dec8c4f1-ddc2-4514-8cbd-4c29255489ea" class=""><br/><br/><strong>今半</strong> 壽喜燒<br/>（第3航廈4F 江戶小路）<br/></p><figure id="dbb50253-1e1c-4c11-8722-fe66f0327b37" class="image"><a href="appendix/Untitled%2036.png"><img style="width:430px" src="appendix/Untitled%2036.png"/></a></figure><p id="5cdb4c64-b991-42f5-b8ed-5fffd9b4b8de" class=""><br/><br/></p></div></figure></div><div id="9127eda9-4def-4c53-b6c5-cfb8c60d9b71" style="width:100%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="4aaf9cdc-577c-4ea0-8f11-cdd6927c23e7"><div style="font-size:1.5em"><span class="icon">🎁</span></div><div style="width:100%">羽田機場內人氣甜點伴手禮：<br/><br/><strong>金澤萬久</strong> 金箔長崎蛋糕<br/>（第一航廈2F PIER 或是 第二航廈 2F 東京食賓館）<br/><figure id="f816fe86-6408-483d-ba3d-f50acf274403" class="image"><a href="appendix/Untitled%2037.png"><img style="width:555px" src="appendix/Untitled%2037.png"/></a></figure><p id="7812b4a8-2e75-4ac7-bd9e-c9a6429c5209" class="">
+	</p><p id="866fe7c0-02e7-4f27-b0f9-ea705e877df3" class=""><strong>銀座あけぼ </strong>米果<br/>（第一航廈2F 特選和菓子館）<br/></p><figure id="18070e5e-e2c0-4e29-b948-9bc6d4ca4fb8" class="image"><a href="appendix/Untitled%2038.png"><img style="width:225px" src="appendix/Untitled%2038.png"/></a></figure></div></figure><p id="571b776b-0fb1-4309-a1f8-7d1307f0c603" class="">
+	</p></div></div><div id="a4f2641e-c5b2-4dd0-b039-6a540010854d" class="column-list"><div id="230fe335-7703-41f5-905d-6b025f8fd7da" style="width:100%" class="column"><p id="edb1c610-8d98-4ade-8368-32cf0d5d2b61" class="">
+	</p></div><div id="4a509db4-e2dd-4860-828a-a1155ae16b3a" style="width:100%" class="column"><p id="08d08024-6227-42c5-a4c8-bd488945a43d" class="">
+	</p><p id="5f4422b8-6424-4bbe-af8b-d62b65bb65d8" class="">
+	</p></div></div></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">地圖</summary><div class="indented"><figure id="c6cf5ff3-4b8b-42fd-b2cf-0878d5ebb4c0" class="image"><a href="appendix/japanMap.png"><img style="width:1143px" src="appendix/japanMap.png"/></a><figcaption>日本全國地圖</figcaption></figure><p id="e6d72b2e-271a-46cb-805d-ca11876d4b09" class="">
+	</p><figure id="3988ed88-208d-4ca2-a218-055347bdc29d" class="image"><a href="appendix/smallMap.png"><img style="width:1418px" src="appendix/smallMap.png"/></a><figcaption>這次旅行會經過的城市</figcaption></figure><p id="fcea973a-16ad-41cd-9fff-2ef83694fe04" class="">
+	</p></div></details><p id="1e685a47-a502-43c2-8188-936e206576a3" class="">
+	</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
